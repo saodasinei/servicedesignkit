@@ -1,0 +1,19 @@
+{
+  "name": "awesome-nodejs-app",
+  "version": "0.0.1",
+  "description": "An awesome node js app developed with covexo cloud",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "watch": "nodemon"
+  },
+  "keywords": [
+    "hello-world",
+    "covexo Cloud"
+  ],
+  "author": "Your name goes here",
+  "dependencies": {
+    "express": "^4.16.2",
+    "nodemon": "^1.17.3"
+  }
+}
