@@ -1,0 +1,127 @@
+html, body {
+	font-family: Arial;
+}
+
+/*
+.circle{
+	width:25px;
+	height:25px;
+	background-color:#009682;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	color:#f2f2f2;
+	text-align: center;
+	margin:auto;
+}
+.row{
+	margin-top: 30px;
+}
+
+
+*/
+
+/*jumbotron instruction1*/
+#instruction1{
+	background-color: #333;
+}
+
+#instruction1 h1{
+	color: #f2f2f2;
+	text-align: center;
+	
+}
+#instruction1 span{
+	text-decoration: underline;
+	text-decoration-color: #009682;
+}
+
+#instruction1 p{
+
+	color: #f2f2f2;
+	text-align: justify;
+}
+#instruction1 a{
+
+    margin-top:30px;
+	background-color: #009682;
+	color:#f2f2f2;
+}
+#p1{
+	width:600px;
+	margin:auto;
+}
+
+#start{
+	width:150px;
+	border-radius:25px;
+}
+/*#p2{
+	width:200px;
+    margin:20px;
+}
+#p3{
+     width:200px;
+     margin:20px;
+}
+#p4{
+	width:500px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 50px;
+}*/
+
+
+
+/*instrucion2*/
+
+
+#viewall{
+	color:#009682;
+	margin-right: 0px;
+	margin-top:10px;
+}
+
+
+/*instruction3*/
+#instruction3{
+	margin-top:100px;
+}
+#instruction3-timo{
+	 margin-left:80px;
+	 width:100px;
+	 height:100px;
+}
+
+
+/*instruction4*/
+
+#instruction4 {
+	margin-top:100px;
+	margin-bottom: 100px;
+}
+#physicial-cards{
+	height: 300px;
+}
+
+
+/*footer*/
+
+#logo-iism{
+
+}
+#logo-iism{
+	margin-left:30px;
+	width:180px;
+	height:60px;
+}
+#logo-kit{
+	margin-left:30px;
+	width:140px;
+	height:60px;
+	
+}
+#address{
+	color:#AEAEAE;
+	margin-left:30px;
+}
+

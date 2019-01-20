@@ -1,0 +1,78 @@
+
+/*navbar*/
+#nav{
+	background-color: #333333;
+	border-bottom:3px solid #6B6B6B;
+}
+#logo{
+	height:35px;
+	width:35px;
+}
+#title{
+  font-size:25px;
+  margin-left: 40px;
+  color:#009682;
+}
+#navbarSupportedContent a{
+  color:#009682;
+}
+#navbarSupportedContent a:hover{
+  background-color:#009682;
+  color:#FFFFFF;
+}
+#navbarSupportedContent a.choosed{
+  background-color:#009682;
+  color:#FFFFFF;
+}
+
+#user-icon{
+	display:none;
+}
+#logout-icon{
+	display:none;
+}
+/*login*/
+#login-form{
+	margin:20px 20px 20px 20px;
+}
+#login-form h3{
+	color:#009682;
+}
+#login-form button{
+
+	float:right;
+}
+#login .alert{
+	display:none;
+}
+
+/*logout*/
+#logout h5{
+	color:#009682;
+}
+#logout a{
+	background-color: #009682;
+}
+/*signup*/
+#signup-form{
+	margin:20px 20px 20px 20px;
+}
+#signup-form h3{
+	color:#009682;
+}
+#signup-form button{
+	float:right;
+}
+#signup .alert{
+	display:none;
+}
+
+footer{
+	background-color: #333333;
+}
+#imprint{
+	color:#009682
+}
+footer a{
+	color:#AEAEAE;;
+}
