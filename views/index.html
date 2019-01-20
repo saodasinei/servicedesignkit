@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+</head>
+<body>
+	
+
+  <input type="file" id="file">
+  <a class="btn btn-secondary" id='ok'>OK</a>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+      <script>
+  	  
+  	   $("#ok").click(function(){
+
+
+             var file = $("#file")[0];
+
+             var formData=new FormData();
+             formData.append('file',file.files[0]);
+             // alert("123");
+  	   	     console.log(file.files);
+  	   	     console.log(formData);
+
+  	   });   
+
+  	  
+  	 
+      </script>
+
+</body>
+</html>
