@@ -119,7 +119,7 @@ CREATE TABLE `tn_info` (
   `tn_img` varchar(25) NOT NULL,
   `tn_dc` text NOT NULL,
   `tn_is` text NOT NULL,
-  `tn_rf` text CHARACTER SET utf8 COLLATE utf8_german2_ci NOT NULL,
+  `tn_rf` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `tn_dp` varchar(25) NOT NULL,
   `tn_td` varchar(25) NOT NULL,
   `tn_d` varchar(25) NOT NULL,
