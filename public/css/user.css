@@ -1,0 +1,130 @@
+html,body{
+	height:100%;
+	font-family: Arial;
+
+}
+#my-space{
+	height:100%;
+}
+/*leftside*/
+#leftside{
+	background-color: #bfbfbf;
+}
+	
+#list-tab a{
+	background-color: #bfbfbf;
+	border:none;
+}
+
+/*rightside*/
+#rightside{
+	background-color: #F7F7F7;
+	height:100%;
+	overflow-y:scroll;
+}
+
+/*my techniques*/
+.tn-card{
+    margin-left: 15px;
+    margin-right:15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 205px;
+    height: 120px;
+}
+.tn-card img{
+    width: 205px;
+    height:120px;
+}
+.tn-card li{
+  float:right;
+}
+.like{
+	color:red;
+}
+
+/*history*/
+
+.circle{
+	width:20px;
+	height:20px;
+	background-color:#666666;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+    position:relative;
+    left:-26px;
+}
+.history{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.history-details{
+	border-left:2px solid #000000;
+}
+.atn-card{
+	margin:10px;
+}
+.h-delete{
+	float:right;
+}
+.ah-content{
+	color:#009682;
+}
+.ah-underline{
+	border-bottom:1px solid #009682;
+}
+#mt-introduce{
+	margin-bottom: 30px;
+}
+
+
+/*sugget new technique*/
+#userinput{
+	margin-top:30px;
+	margin-right: 20px;
+}
+#select{
+	margin-top: 68px;
+	width:200px;
+}
+#select select{
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+#preview{
+	background-color:#009682;
+	margin-top: 40px;
+}
+#confirm{
+	background-color:#009682;
+	float:right;
+}
+#addtag{
+	color:#009682;
+}
+
+.ntn-tag{
+	background-color:#999;
+	margin-left:10px;
+}
+.ntn-tag-close{
+	background-color: #666;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+}
+#addtag{
+	margin-top: 20px;
+}
+.cnt{
+	margin:10px;
+}
+.ctattr{
+	color:#009682;
+}
+h3{
+	border-bottom: 1px solid #333333
+}
+h5{
+	border-bottom:1px solid #333333;
+}
+

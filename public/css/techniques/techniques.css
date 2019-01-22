@@ -1,0 +1,141 @@
+html, body {
+
+  font-family: Arial;
+}
+
+/*search*/
+#search-input{
+  outline: none;
+  background-color: #333333;
+  border-width:0px 0px 1px 0px;
+  border-color:#009682;
+  color:#FFFFFF;
+}
+
+/*selecter*/
+
+#selecter{
+  background-color: #333;
+}
+
+#selecter p{
+  color:#FFFFFF;
+}
+#accordionExample a{
+  border-bottom: 1px solid #CCC;
+}
+#collapseOne{
+  background-color: #BCBCBC;
+}
+#accordionExample span{
+  border-bottom: 1px solid #333;
+}
+#accordionExample a{
+  background-color: #BCBCBC;
+}
+#collapseOne a{
+  background-color: #BCBCBC;
+}
+#collapseOne a.selected{
+     
+     color:#009682;
+}
+#collapseOne a:hover{
+     
+     color:#009682;
+}
+
+/*filter*/
+#filter{
+  background-color: #F2F2F2;
+
+}
+#filter a{
+
+  background-color: #666;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+}
+
+.filter-attr{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #999;
+}
+#filter span{
+  font-weight: bold;
+}
+
+
+/*technique cards*/
+#card{
+  width:800px;
+}
+
+.tn-card{
+    margin-left: 15px;
+    margin-right:15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 205px;
+    height: 120px;
+}
+.tn-card img{
+    width: 205px;
+    height:120px;
+}
+.tn-card li{
+  float:right;
+}
+.tn-card i{
+  color:#BCBCBC;
+  padding-bottom:10px;
+}
+.notlike{
+  color:#BCBCBC;
+}
+.like{
+   color:red;
+}
+
+
+  /*search and tags*/
+#tag{
+  margin-top: 20px;
+}
+.notchoosed{
+  background-color: #CCCCCC;
+  color: #000000;
+ }
+
+
+.choosed{
+  background-color: #009682;
+  color: white;
+}
+
+
+
+/*back to top button*/
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 98;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+
+}
+
+#myBtn:hover {
+  background-color:#009682;
+}
+
