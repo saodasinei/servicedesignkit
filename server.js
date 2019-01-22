@@ -17,7 +17,7 @@ const db=mysql.createPool({host:'localhost', user:'root',
 
 var server=express();
 
-server.listen(3000);
+server.listen(80);
 
 
 //data request
