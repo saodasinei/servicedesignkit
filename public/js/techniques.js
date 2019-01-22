@@ -53,7 +53,7 @@ $("#asktimo").mouseleave(function(){
                             if(user_tn.indexOf(tn.tns[i].tn_id) != -1){
                                 $("#cards").append(
                                 "<div class='tn-card card' id="+tn.tns[i].tn_id+">"
-                               +"<a target='_blank' href='http://www.servicedesignkit.org/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
+                               +"<a target='_blank' href='/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
                                +"<img class='card-img-top' src='../images/"+tn.tns[i].tn_img+"' alt='Card image cap'>"
                                +"</a>"
                                +"<div class='card-footer'>"
@@ -69,7 +69,7 @@ $("#asktimo").mouseleave(function(){
                               else{
                                $("#cards").append(
                                "<div class='tn-card card' id="+tn.tns[i].tn_id+">"
-                               +"<a target='_blank' href='http://www.servicedesignkit.org/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
+                               +"<a target='_blank' href='/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
                                +"<img class='card-img-top' src='../images/"+tn.tns[i].tn_img+"' alt='Card image cap'>"
                                +"</a>"
                                +"<div class='card-footer'>"
@@ -86,7 +86,7 @@ $("#asktimo").mouseleave(function(){
                          for(i=0;i<tn.tns.length; i++){
                             $("#cards").append(
                            "<div class='tn-card card' id="+tn.tns[i].tn_id+">"
-                           +"<a target='_blank' href='http://www.servicedesignkit.org/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
+                           +"<a target='_blank' href='/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
                            +"<img class='card-img-top' src='../images/"+tn.tns[i].tn_img+"' alt='Card image cap'>"
                            +"</a>"
                            +"<div class='card-footer'>"
@@ -149,7 +149,7 @@ $(document).ready(function(){
                             if(user_tn.indexOf(tn.tns[i].tn_id) != -1){
                                 $("#cards").append(
                                 "<div class='tn-card card' id="+tn.tns[i].tn_id+">"
-                               +"<a target='_blank' href='http://www.servicedesignkit.org/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
+                               +"<a target='_blank' href='/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
                                +"<img class='card-img-top' src='../images/"+tn.tns[i].tn_img+"' alt='Card image cap'>"
                                +"</a>"
                                +"<div class='card-footer'>"
@@ -163,7 +163,7 @@ $(document).ready(function(){
                               else{
                                $("#cards").append(
                                "<div class='tn-card card' id="+tn.tns[i].tn_id+">"
-                               +"<a target='_blank' href='http://www.servicedesignkit.org/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
+                               +"<a target='_blank' href='/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
                                +"<img class='card-img-top' src='../images/"+tn.tns[i].tn_img+"' alt='Card image cap'>"
                                +"</a>"
                                +"<div class='card-footer'>"
@@ -180,7 +180,7 @@ $(document).ready(function(){
                          for(i=0;i<tn.tns.length; i++){
                             $("#cards").append(
                            "<div class='tn-card card' id="+tn.tns[i].tn_id+">"
-                           +"<a target='_blank' href='http://www.servicedesignkit.org/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
+                           +"<a target='_blank' href='/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
                            +"<img class='card-img-top' src='../images/"+tn.tns[i].tn_img+"' alt='Card image cap'>"
                            +"</a>"
                            +"<div class='card-footer'>"
@@ -250,7 +250,7 @@ $(document).ready(function(){
                                     // }
                                       $("#cards").append(
                                       "<div class='tn-card card' id="+tn.tns[i].tn_id+">"
-                                      +"<a target='_blank' href='http://www.servicedesignkit.org/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
+                                      +"<a target='_blank' href='/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
                                       +"<img class='card-img-top' src='../images/"+tn.tns[i].tn_id+".jpg' alt='Card image cap'>"
                                       +"</a>"
                                       +"<div class='card-footer'>"
@@ -278,7 +278,7 @@ $(document).ready(function(){
                                     //  }
                                       $("#cards").append(
                                        "<div class='tn-card card' id="+tn.tns[i].tn_id+">"
-                                       +"<a target='_blank' href='http://www.servicedesignkit.org/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
+                                       +"<a target='_blank' href='/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
                                        +"<img class='card-img-top' src='../images/"+tn.tns[i].tn_id+".jpg' alt='Card image cap'>"
                                        +"</a>"
                                        +"<div class='card-footer'>"
@@ -310,7 +310,7 @@ $(document).ready(function(){
                          //    }
                             $("#cards").append(
                            "<div class='tn-card card' id="+tn.tns[i].tn_id+">"
-                           +"<a target='_blank' href='http://www.servicedesignkit.org/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
+                           +"<a target='_blank' href='/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
                            +"<img class='card-img-top' src='../images/"+tn.tns[i].tn_id+".jpg' alt='Card image cap'>"
                            +"</a>"
                            +"<div class='card-footer'>"
@@ -431,7 +431,7 @@ $(document).ready(function(){
                             if(user_tn.indexOf(tn.tns[i].tn_id) != -1){
                                 $("#cards").append(
                                 "<div class='tn-card card' id="+tn.tns[i].tn_id+">"
-                               +"<a target='_blank' href='http://www.servicedesignkit.org/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
+                               +"<a target='_blank' href='/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
                                +"<img class='card-img-top' src='../images/"+tn.tns[i].tn_img+"' alt='Card image cap'>"
                                +"</a>"
                                +"<div class='card-footer'>"
@@ -445,7 +445,7 @@ $(document).ready(function(){
                               else{
                                $("#cards").append(
                                "<div class='tn-card card' id="+tn.tns[i].tn_id+">"
-                               +"<a target='_blank' href='http://www.servicedesignkit.org/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
+                               +"<a target='_blank' href='/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
                                +"<img class='card-img-top' src='../images/"+tn.tns[i].tn_img+"' alt='Card image cap'>"
                                +"</a>"
                                +"<div class='card-footer'>"
@@ -462,7 +462,7 @@ $(document).ready(function(){
                          for(i=0;i<tn.tns.length; i++){
                             $("#cards").append(
                            "<div class='tn-card card' id="+tn.tns[i].tn_id+">"
-                           +"<a target='_blank' href='http://www.servicedesignkit.org/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
+                           +"<a target='_blank' href='/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
                            +"<img class='card-img-top' src='../images/"+tn.tns[i].tn_img+"' alt='Card image cap'>"
                            +"</a>"
                            +"<div class='card-footer'>"
@@ -696,7 +696,7 @@ $(document).ready(function(){
                             if(user_tn.indexOf(tn.tns[i].tn_id) != -1){
                                 $("#cards").append(
                                 "<div class='tn-card card' id="+tn.tns[i].tn_id+">"
-                               +"<a target='_blank' href='http://www.servicedesignkit.org/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
+                               +"<a target='_blank' href='/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
                                +"<img class='card-img-top' src='../images/"+tn.tns[i].tn_img+"' alt='Card image cap'>"
                                +"</a>"
                                +"<div class='card-footer'>"
@@ -710,7 +710,7 @@ $(document).ready(function(){
                               else{
                                $("#cards").append(
                                "<div class='tn-card card' id="+tn.tns[i].tn_id+">"
-                               +"<a target='_blank' href='http://www.servicedesignkit.org/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
+                               +"<a target='_blank' href='/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
                                +"<img class='card-img-top' src='../images/"+tn.tns[i].tn_img+"' alt='Card image cap'>"
                                +"</a>"
                                +"<div class='card-footer'>"
@@ -727,7 +727,7 @@ $(document).ready(function(){
                          for(i=0;i<tn.tns.length; i++){
                             $("#cards").append(
                            "<div class='tn-card card' id="+tn.tns[i].tn_id+">"
-                           +"<a target='_blank' href='http://www.servicedesignkit.org/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
+                           +"<a target='_blank' href='/techniques/details?tn_id="+tn.tns[i].tn_id+"'>"
                            +"<img class='card-img-top' src='../images/"+tn.tns[i].tn_img+"' alt='Card image cap'>"
                            +"</a>"
                            +"<div class='card-footer'>"
