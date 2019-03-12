@@ -55,14 +55,14 @@ $(document).ready(function(){
                             +"<img src='../icons/Timo.jpg' class='profile'>"
                             +"<div>"
                             +"<span class='srobot-content'>"
-                            +"Hallo, i'm Timo, a digtial service design expert ：). What can i do for you?"         
+                            +"Hello, I'm Timo, a digital service design expert. What can I do for you?"         
                             +"</span>"                    
                             +"</div>"
                             +"</li>"
                             );
                       },1000);
 
-                         // introduce and guidance to technique search
+      // introduce and guidance to technique search
                    $("#user-text").keyup(function(event){
                         
 
@@ -151,7 +151,7 @@ $(document).ready(function(){
                               +"<img src='../icons/Timo.jpg' class='profile'>"
                               +"<div>"
                               +"<span class='srobot-content'>"
-                              +"This web platform is a production of Simin He in his master thesis. The design techniques are organized based on a taxonomy. We offer you a filter to search techniques. Of course, if you have some problem, you can also ask me, i can help you to find some design techniques."
+                              +"This web platform is a production of Simin He in his master thesis. The design techniques are organized based on a taxonomy. We offer you a filter to search techniques. Of course, if you have some problems, you can also ask me, I can help you to find some design techniques."
                               +"</span>"                    
                               +"</div>"
                               +"</li>"
@@ -177,7 +177,7 @@ $(document).ready(function(){
                               +"I'm Timo, an expert in the field of digital service design. I can help you find some design techniques. You can choose an option below to get your design techniques."
                               +"<div class='timo-function'>"
                               +"<button class='btn btn-outline-secondary st-kw'>"
-                              +" Search with key words."
+                              +" Search with keywords."
                               +"</button></br>"
                               +"or</br>"
                               +"<button class='btn btn-outline-secondary st-rc'>"
@@ -203,7 +203,7 @@ $(document).ready(function(){
                               +"<img src='../icons/Timo.jpg' class='profile'>"
                               +"<div>"
                               +"<span class='srobot-content'>"
-                              +"Do you have any problems in finding a design technique? I’ll be happy to help you."
+                              +"Do you have any problem in finding a design technique? I’ll be happy to help you."
                               +"<div class='timo-function'>"
                               +"<button class='btn btn-outline-secondary' id='needt-yes'>"
                               +"Yes"
@@ -234,7 +234,7 @@ $(document).ready(function(){
                               +"If you need some design techniques, you can choose the following options." 
                               +"<div class='timo-function'>"
                               +"<button class='btn btn-outline-secondary st-kw'>"
-                              +" Search with key words."
+                              +" Search with keywords."
                               +"</button></br>"
                               +"or</br>"
                               +"<button class='btn btn-outline-secondary st-rc'>"
@@ -277,7 +277,7 @@ $(document).ready(function(){
                               +"I offer you some ways to find design techniques, choose one you like." 
                               +"<div class='timo-function'>"
                               +"<button class='btn btn-outline-secondary st-kw'>"
-                              +" Search with key words."
+                              +" Search with keywords."
                               +"</button></br>"
                               +"or</br>"
                               +"<button class='btn btn-outline-secondary st-rc'>"
@@ -317,10 +317,10 @@ $(document).ready(function(){
                               +"<img src='../icons/Timo.jpg' class='profile'>"
                               +"<div>"
                               +"<span class='srobot-content'>"
-                              +"Ok. I’m always here. If you have any questions on service design techniques, you can ask me. Here are what I can do for you. " 
+                              +"Ok. I’m always here. If you have any questions on service design techniques, you can ask me. Here is what I can do for you. " 
                               +"<div class='timo-function'>"
                               +"<button class='btn btn-outline-secondary st-kw'>"
-                              +" Search with key words."
+                              +" Search with keywords."
                               +"</button></br>"
                               +"<button class='btn btn-outline-secondary st-rc'>"
                               +" Let me recommend."
@@ -363,7 +363,7 @@ $(document).ready(function(){
                               +"<img src='../icons/Timo.jpg' class='profile'>"
                               +"<div>"
                               +"<span class='srobot-content'>"
-                              +"Please give a keyword of a design techniques."
+                              +"Please give a keyword below."
                               +"<div class='suserinput'>"
                               +"<input type='text keyword' id='keyword' name='keyword' placeholder='Keyword'>"
                               +"<a class='btn btn-secondary keyword-ok s-ok'>OK</a>"
@@ -459,7 +459,7 @@ $(document).ready(function(){
                               +"<img src='../icons/Timo.jpg' class='profile'>"
                               +"<div>"
                               +"<span class='srobot-content'>"
-                              +"I don't find related technqiues, please type a keyword again"
+                              +"I didn't find related techniques, please type another keyword."
                               +"<div class='suserinput'>"
                               +"<input type='text keyword' id='keyword' name='keyword' placeholder='Keyword'>"
                               +"<a class='btn btn-secondary keyword-ok s-ok'>OK</a>"
@@ -493,7 +493,7 @@ $(document).ready(function(){
                               "<li class='suser'>"
                              +"<img src='../icons/user.jpg' class='profile'>"
                              +"<span class='suser-content'>"
-                             + "I want let you recommend."
+                             + "I want to let you recommend."
                              +"</span>"
                              +"</li>"
                                );
@@ -513,7 +513,7 @@ $(document).ready(function(){
                                   "<li class='srobot'>"
                                   +"<img src='../icons/Timo.jpg' class='profile'>"
                                   +"<span class='robot-content'>"
-                                  +"Warm Prompt:If you want to save the recommended design techniques for your project, please log in firstly."
+                                  +"Warm Prompt: If you want to save the recommended design techniques for your project, please log in firstly."
                                   +"</span>"
                                   +"</li>"
                                 );
@@ -522,7 +522,7 @@ $(document).ready(function(){
                              $("#scontent").append( 
                                 "<li class='srobot-waiting robot-status'>"
                                +"<img src='../icons/Timo.jpg' class='profile'>"
-                               +"<span class='robot-content'>Ok. In the following, I’ll ask you some multiple choice questions to guide you to find your techniques for your project.</br>"
+                               +"<span class='robot-content'>Ok. In the following, I’ll ask you some multiple-choice questions to guide you to find your techniques for your project.</br>"
                                +"Do you have a name for your project? "
                                +"<div class='timo-function'>"
                                +"<button class='btn btn-outline-secondary' id='project-name-yes'>"
@@ -604,7 +604,7 @@ $(document).ready(function(){
                              $("#scontent").append( 
                                 "<li class='srobot-waiting robot-status'>"
                                +"<img src='../icons/Timo.jpg' class='profile'>"
-                               +"<span class='robot-content'>Could you please let me know which one of the following phase can describe your project stage most appropriately? "
+                               +"<span class='robot-content'>Could you please let me know which one of the following phases can describe your project stage most appropriately? "
                                +"<div class='suserinput'>"
                                +"<div class='form-check'>"
                                +"<input class='form-check-input' type='radio' name='dp' id='11' value='Planning'>"
@@ -679,7 +679,7 @@ $(document).ready(function(){
                              $("#scontent").append( 
                                 "<li class='srobot-waiting robot-status'>"
                                +"<img src='../icons/Timo.jpg' class='profile'>"
-                               +"<span class='robot-content'>Could you let me know which one of the following phase can describe your project stage most appropriately? "
+                               +"<span class='robot-content'>Could you let me know which one of the following phases can describe your project stage most appropriately? "
                                +"<div class='suserinput'>"
                                +"<div class='form-check'>"
                                +"<input class='form-check-input' type='radio' name='dp' id='11' value='Planning'>"
@@ -743,7 +743,7 @@ $(document).ready(function(){
                                    usay_dp="I’m working on detailed design."
                                    break;
                                case "Release":
-                                   rsay_dp="Wow, you will release your project! Very good! Now, i want to know you time requirment. How long do you wish the implement duration of techniques."
+                                   rsay_dp="Wow, you will release your project! Very good! Now, I want to know your time requirment. How long do you wish the implement duration of techniques."
                                    usay_dp="I’m going to release the project.";
                                    break;
                              }
@@ -858,13 +858,13 @@ $(document).ready(function(){
                                +"<div class='form-check'>"
                                +"<input class='form-check-input' type='radio' name='up' id='exampleRadios1' value='User Attendance'>"
                                +"<label class='form-check-label' for='exampleRadios1'>"
-                               +"Yes, potential users will participate in design process. "
+                               +"Yes, potential users will participate in the design process. "
                                +"</label>"
                                +"</div>"
                                +"<div class='form-check'>"
                                +"<input class='form-check-input' type='radio' name='up' id='exampleRadios2' value='User Absence'>"
                                +"<label class='form-check-label' for='exampleRadios2'>"
-                               +"No, users will not participate in design process."    
+                               +"No, users will not participate in the design process."    
                                +"</label>"
                                +"</div>"
                                +"<a class='btn btn-secondary s-ok' id='up-ok'>Ok</a>"                   
@@ -895,12 +895,12 @@ $(document).ready(function(){
 
                             switch(tn_up){
                                case "User Attendance":
-                                   rsay_up="I will select design techniques accordding to these characteristics.";
-                                   usay_up="Potential users will will be involved in design process.";
+                                   rsay_up="I will select design techniques according to these characteristics.";
+                                   usay_up="Potential users will will be involved in the design process.";
                                    break;
                                case "User Absence":
-                                   rsay_up="I will select design techniques accordding to these characteristics."
-                                   usay_up="No users participate in design process.";
+                                   rsay_up="I will select design techniques according to these characteristics."
+                                   usay_up="No users participate in the design process.";
                                    break;
                               }
                              
@@ -1022,7 +1022,7 @@ $(document).ready(function(){
                                         +"<img src='../icons/Timo.jpg' class='profile'>"
                                         +"<div>"
                                         +"<span class='srobot-content'>"
-                                        +"The required techniques are not found in technique library. The followling are some related techniques that may be helpful.</br>"
+                                        +"The required techniques are not found in technique library. The following are some related techniques that may be helpful.</br>"
                                         +"</span>"                    
                                         +"</div>"
                                         +"</li>"
@@ -1153,7 +1153,7 @@ $(document).ready(function(){
                                            +"<img src='../icons/Timo.jpg' class='profile'>"
                                            +"<div>"
                                            +"<span class='srobot-content'>"
-                                           +"Does the recommended design techniques help you?" 
+                                           +"Are those recommended design techniques helpful to you?" 
                                            +"<div class='timo-function'>"
                                            +"<button class='btn btn-outline-secondary if_help-yes'>"
                                            +"Yes"
@@ -1211,7 +1211,7 @@ $(document).ready(function(){
                                   +"<img src='../icons/Timo.jpg' class='profile'>"
                                   +"<div>"
                                   +"<span class='srobot-content'>"
-                                  +"Does the recommended design techniques help you?" 
+                                  +"Are those recommended design techniques helpful to you?" 
                                   +"<div class='timo-function'>"
                                   +"<button class='btn btn-outline-secondary if_help-yes'>"
                                   +"Yes"
@@ -1388,7 +1388,7 @@ $(document).ready(function(){
                                +"Thank you very much! You can try some other functions or contact me if you have some feedbacks.</br>"
                                +"<div class='timo-function'>"
                                +"<button class='btn btn-outline-secondary st-kw'>"
-                               +" Search with key words."
+                               +" Search with keywords."
                                +"</button></br>"
                                +"<button class='btn btn-outline-secondary st-rc'>"
                                +" Let me recommend."
