@@ -3,10 +3,10 @@
 // chatframe of timo scroll to bottom auto
 
 function scrollTobottom(){
-   var clientHeight = $("#f-content").height();
+   var clientHeight = $("#chatbox").height();
                 var offsetHeight = $("#scontent").get(0).scrollHeight;
                 if (offsetHeight > clientHeight) {
-                    $("#f-content").scrollTop(offsetHeight - clientHeight+100);
+                    $("#chatbox").scrollTop(offsetHeight - clientHeight+100);
                 }
             }
 
@@ -26,24 +26,9 @@ function loading(){
                        +"</li>"
                          );
 
-}
+                   }
 
-// function userloading(){
-//                     $("#scontent").append(
-//                        "<li class='suser userloading'>"
-//                        +"<div>"
-//                        +"<span class='srobot-content'>"
-//                        + "<div class='suser-spinner'>"
-//                        +"<div class='bounce1'></div>"
-//                        +"<div class='bounce2'></div>"
-//                        +"<div class='bounce3'></div>"
-//                        +"</div>"
-//                        +"</span>"
-//                        +"</div>"
-//                        +"</li>"
-//                          );
 
-// }
 
 
 
@@ -51,49 +36,17 @@ function loading(){
 
 $(document).ready(function(){
 
-      
-
-      // timo mouseon
-      $("#robot").mouseenter(function(){
-
-           
-
-           $("#ask").css("display","block");
-
-      });
-
-      $("#robot").mouseleave(function(){
+	          var tn_dp="";
+            var tn_d="";
+            var tn_up="";
+            var project_name="";
+            var project_tn="";
+             if_help="";
+             feedback="";
+             user_say1="";
 
 
-
-           $("#ask").css("display","none");
-
-      });
-
-
-
-
-
-
-       $("#f-close").click(function(){
-
-            $("#frame").css("display","none");
-
-       });
-       
-        var tn_dp;
-        var tn_d;
-        var tn_up;
-        var project_name;
-        var project_tn;
-        var if_help;
-        var feedback;
-        var user_say1;
-
-        $("#asktimo").click(function(){
-              if($("#frame").css("display")=="none"){
-                  $("#frame").css("display","block");
-                     $("#scontent").empty();
+	         $("#scontent").empty();
                      loading();
                       setTimeout(function(){
                           $(".loading").hide();
@@ -102,46 +55,28 @@ $(document).ready(function(){
                             +"<img src='../icons/Timo.jpg' class='profile'>"
                             +"<div>"
                             +"<span class='srobot-content'>"
-                            +"Hello, I'm Timo, a digital service design expert. What can I do for you?"         
+                            +"Hallo, i'm Timo, a digtial service design expert ：). What can i do for you?"         
                             +"</span>"                    
                             +"</div>"
                             +"</li>"
                             );
                       },1000);
 
-              }else{
-                  $("#frame").css("display","none");
-                  $("#scontent").empty();
-                  tn_dp="";
-                  tn_d="";
-                  tn_up=""
-                  project_name="";
-                  project_tn="";
-                  if_help="";
-                  feedback="";
-                  user_say1="";
-              }
-
-           });
-              
-
-              // introduce and guidance to technique search
-              $("#user-text1").keyup(function(event){
+                         // introduce and guidance to technique search
+                   $("#user-text").keyup(function(event){
                         
 
                         if(event.keyCode=="13"){
                               
-                              $("#user-text-ok1").click();
+                              $("#user-text-ok").click();
 
                         }
 
-              });
-              
-              
-              $("#user-text-ok1").click(function (){
+                     });
+                 $("#user-text-ok").click(function(){
                        
-                       var user_text=$("#user-text1").val();
-                       user_say1=user_text;
+                       var user_text=$("#user-text").val();
+                       $("#user-text").val("");
                        $("#scontent").append(
                         "<li class='suser'>"
                       +"<img src='../icons/user.jpg' class='profile'>"
@@ -150,10 +85,9 @@ $(document).ready(function(){
                       +"</span>"
                       +"</li>"
                         );
-                       scrollTobottom();
                        $("#user-text1").val("");
                        user_text=user_text.toLowerCase();
-                       var topic_timo=["hi","hello","who are you?", "who are you", "what can you do?","what can you do","what is your name?","what is your name","name","who","you"];
+                       var topic_timo=["hi","hello","who are you?", "who are you","who are you ", "what can you do?","what can you do","what is your name?","what is your name","name","who","you"];
                        var topic_kit=["kit","karlsruhe institute of technology"];
                        var topic_iism=["iism","issd"];
                        var topic_project=["what's this", "what is this","web","platform"];
@@ -191,7 +125,7 @@ $(document).ready(function(){
                               +"<img src='../icons/Timo.jpg' class='profile'>"
                               +"<div>"
                               +"<span class='srobot-content'>"
-                              +"Institute of Information Systems and Marketing "
+                              +"Institute of Information Systems and Marketing"
                               +"<a href='https://www.iism.kit.edu/'>(IISM)</a></br>"
                               +"Research Group Information Systems and Service Design"
                               +"<a href='http://issd.iism.kit.edu/'>(ISSD)</a>"
@@ -209,15 +143,15 @@ $(document).ready(function(){
 
                        else if(topic_project.indexOf(user_text)>-1){
                                loading();
-                           scrollTobottom();
-                          setTimeout(function(){
+                               scrollTobottom();
+                              setTimeout(function(){
                               $(".loading").hide();
                               $("#scontent").append(
                               "<li class='srobot'>"
                               +"<img src='../icons/Timo.jpg' class='profile'>"
                               +"<div>"
                               +"<span class='srobot-content'>"
-                              +"This web platform is a production of Simin He in his master thesis. The design techniques are organized based on a taxonomy. We offer you a filter to search techniques. Of course, if you have some problems, you can also ask me, I can help you to find some design techniques."
+                              +"This web platform is a production of Simin He in his master thesis. The design techniques are organized based on a taxonomy. We offer you a filter to search techniques. Of course, if you have some problem, you can also ask me, i can help you to find some design techniques."
                               +"</span>"                    
                               +"</div>"
                               +"</li>"
@@ -240,7 +174,7 @@ $(document).ready(function(){
                               +"<img src='../icons/Timo.jpg' class='profile'>"
                               +"<div>"
                               +"<span class='srobot-content'>"
-                              +"Hello! My name is Timo. I'm an expert in the field of digital service design. I can help you find some design techniques. Please choose one option below to start."
+                              +"I'm Timo, an expert in the field of digital service design. I can help you find some design techniques. You can choose an option below to get your design techniques."
                               +"<div class='timo-function'>"
                               +"<button class='btn btn-outline-secondary st-kw'>"
                               +" Search with key words."
@@ -317,19 +251,16 @@ $(document).ready(function(){
                          }
                           
              });
-
-
-
-             $("#scontent").on("click","#needt-yes",function(){
-
-                            $("#scontent").append(
-                              "<li class='suser'>"
-                              +"<img src='../icons/user.jpg' class='profile'>"
-                              +"<span class='suser-content'>"
-                              + "yes"
-                              +"</span>"
-                              +"</li>"
-                                 );
+                             $("#scontent").on("click","#needt-yes",function(){
+                             
+                              $("#scontent").append(
+                               "<li class='suser'>"
+                             +"<img src='../icons/user.jpg' class='profile'>"
+                             +"<span class='suser-content'>"
+                             + "yes"
+                             +"</span>"
+                             +"</li>"
+                               );
                           
                               loading();
                               scrollTobottom();
@@ -365,14 +296,15 @@ $(document).ready(function(){
 
 
              $("#scontent").on("click", "#needt-no",function(){
+
                            $("#scontent").append(
                               "<li class='suser'>"
-                              +"<img src='../icons/user.jpg' class='profile'>"
-                              +"<span class='suser-content'>"
-                              + "no"
-                              +"</span>"
-                              +"</li>"
-                                 );
+                             +"<img src='../icons/user.jpg' class='profile'>"
+                             +"<span class='suser-content'>"
+                             + "no"
+                             +"</span>"
+                             +"</li>"
+                             );
                               loading();
                               scrollTobottom();
                               $(".timo-function").hide();
@@ -392,7 +324,7 @@ $(document).ready(function(){
                               +"</button></br>"
                               +"<button class='btn btn-outline-secondary st-rc'>"
                               +" Let me recommend."
-                              +"</button>"
+                              +"</button></br>"
                               +"<button class='btn btn-outline-secondary st-ct'>"
                               +" Contact me"
                               +"</button>"
@@ -409,16 +341,16 @@ $(document).ready(function(){
 
 
              // search with key word
-             
+
              $("#scontent").on("click", ".st-kw", function(){
                               $("#scontent").append(
                               "<li class='suser'>"
-                              +"<img src='../icons/user.jpg' class='profile'>"
-                              +"<span class='suser-content'>"
-                              + "Search with keyword."
-                              +"</span>"
-                              +"</li>"
-                                 );
+                             +"<img src='../icons/user.jpg' class='profile'>"
+                             +"<span class='suser-content'>"
+                             + "Search with keyword."
+                             +"</span>"
+                             +"</li>"
+                               );
                               loading();
                               scrollTobottom();
                               $(".timo-function").hide();
@@ -431,10 +363,10 @@ $(document).ready(function(){
                               +"<img src='../icons/Timo.jpg' class='profile'>"
                               +"<div>"
                               +"<span class='srobot-content'>"
-                              +"Please give a keyword of a design techniques below."
+                              +"Please give a keyword of a design techniques."
                               +"<div class='suserinput'>"
-                              +"<input type='text' id='keyword' name='keyword' placeholder='Keyword'>"
-                              +"<a class='btn btn-outline-secondary keyword-ok s-ok'>OK</a>"
+                              +"<input type='text keyword' id='keyword' name='keyword' placeholder='Keyword'>"
+                              +"<a class='btn btn-secondary keyword-ok s-ok'>OK</a>"
                               +"</div>"     
                               +"</span>"                    
                               +"</div>"
@@ -450,7 +382,7 @@ $(document).ready(function(){
 
                  if(event.keyCode=="13"){
 
-                  
+
                       $(".keyword-ok").click();
 
                  }
@@ -458,22 +390,21 @@ $(document).ready(function(){
              });
 
              $("#scontent").on("click", ".keyword-ok", function(){
-                              var keyword=$("[name='keyword']").val();
-                              var value=$("[name='keyword']").val().toLowerCase();
-                              $("#scontent").append(
+
+                          var value=$("[name='keyword']").val().toLowerCase();
+                          var keyword=$("[name='keyword']").val();
+                          $("#scontent").append(
                               "<li class='suser'>"
                               +"<img src='../icons/user.jpg' class='profile'>"
                               +"<span class='suser-content'>"
                               + keyword
                               +"</span>"
                               +"</li>"
-                                 );
+                                );
                               loading();
                               scrollTobottom();
                               $(".robot-status").removeClass("srobot-waiting");
                               $(".robot-status").addClass("srobot");
-                             
-                              console.log(value);
                               $(".suserinput").remove();
                               $.ajax({
                                 url: "/techniques/tnsearch",
@@ -528,10 +459,10 @@ $(document).ready(function(){
                               +"<img src='../icons/Timo.jpg' class='profile'>"
                               +"<div>"
                               +"<span class='srobot-content'>"
-                              +"I didn't find related techniques, please type a keyword again."
+                              +"I don't find related technqiues, please type a keyword again"
                               +"<div class='suserinput'>"
                               +"<input type='text keyword' id='keyword' name='keyword' placeholder='Keyword'>"
-                              +"<a class='btn btn-outline-secondary keyword-ok s-ok'>OK</a>"
+                              +"<a class='btn btn-secondary keyword-ok s-ok'>OK</a>"
                               +"</div>"   
                               +"</div>"     
                               +"</span>"                    
@@ -557,42 +488,41 @@ $(document).ready(function(){
               // recommend 
 
              $("#scontent").on("click",".st-rc", function(){
-                               $("#scontent").append(
+                    
+                     $("#scontent").append(
                               "<li class='suser'>"
-                              +"<img src='../icons/user.jpg' class='profile'>"
-                              +"<span class='suser-content'>"
-                              + "I want to let you recommend."
-                              +"</span>"
-                              +"</li>"
-                                 );
+                             +"<img src='../icons/user.jpg' class='profile'>"
+                             +"<span class='suser-content'>"
+                             + "I want let you recommend."
+                             +"</span>"
+                             +"</li>"
+                               );
+
                      
-                          loading();
-                          scrollTobottom();
-                          $(".timo-function").hide();
-                          $(".robot-status").removeClass("srobot-waiting");
-                          $(".robot-status").addClass("srobot");
-                          setTimeout(function(){
+                     loading();
+                     scrollTobottom();
+                     $(".timo-function").hide();
+                     $(".robot-status").removeClass("srobot-waiting");
+                     $(".robot-status").addClass("srobot");
+                     setTimeout(function(){
                              $(".loading").hide();
 
 
-                              if(!$.cookie('user_login')){
+                             if(!$.cookie('user_login')){
                                    $("#scontent").append(
                                   "<li class='srobot'>"
                                   +"<img src='../icons/Timo.jpg' class='profile'>"
                                   +"<span class='robot-content'>"
-                                  +"Warm Prompt: If you want to save the recommended design techniques for your project, please log in firstly."
+                                  +"Warm Prompt:If you want to save the recommended design techniques for your project, please log in firstly."
                                   +"</span>"
                                   +"</li>"
                                 );
                              }
-
-                           
                             
                              $("#scontent").append( 
                                 "<li class='srobot-waiting robot-status'>"
                                +"<img src='../icons/Timo.jpg' class='profile'>"
-                               +"<span class='robot-content'>"
-                               +"Ok. In the following, I’ll ask you some multiple choice questions to guide you in finding design techniques for your project.</br>"
+                               +"<span class='robot-content'>Ok. In the following, I’ll ask you some multiple choice questions to guide you to find your techniques for your project.</br>"
                                +"Do you have a name for your project? "
                                +"<div class='timo-function'>"
                                +"<button class='btn btn-outline-secondary' id='project-name-yes'>"
@@ -615,16 +545,15 @@ $(document).ready(function(){
               });
               
                 // ask project name
-                $("#scontent").on("click","#project-name-yes", function(){ 
-
-                              $("#scontent").append(
+                $("#scontent").on("click","#project-name-yes", function(){
+                            $("#scontent").append(
                               "<li class='suser'>"
-                              +"<img src='../icons/user.jpg' class='profile'>"
-                              +"<span class='suser-content'>"
-                              + "yes"
-                              +"</span>"
-                              +"</li>"
-                                 );
+                             +"<img src='../icons/user.jpg' class='profile'>"
+                             +"<span class='suser-content'>"
+                             + "yes"
+                             +"</span>"
+                             +"</li>"
+                               );
                       
                            loading();
                            scrollTobottom();
@@ -637,10 +566,10 @@ $(document).ready(function(){
                              $("#scontent").append( 
                                 "<li class='srobot-waiting robot-status'>"
                                +"<img src='../icons/Timo.jpg' class='profile'>"
-                               +"<span class='robot-content'>Please type the name of your project.</br>"
+                               +"<span class='robot-content'>Please type the name of your project."
                                +"<div class='suserinput'>"
                                +"<input type='text' id='project-name' placeholder='Name of the Project'>"
-                               +"<a class='btn btn-outline-secondary s-ok' id='project-name-ok'>OK</a>"
+                               +"<a class='btn btn-secondary s-ok' id='project-name-ok'>OK</a>"
                                +"</div>"     
                                +"</span>"
                                +"</li>"
@@ -655,15 +584,14 @@ $(document).ready(function(){
                 
                 // no project name  ask design phase
                  $("#scontent").on("click","#project-name-no", function(){
-
-                               $("#scontent").append(
-                              "<li class='suser'>"
-                              +"<img src='../icons/user.jpg' class='profile'>"
-                              +"<span class='suser-content'>"
-                              + "no"
-                              +"</span>"
-                              +"</li>"
-                                 );
+                              $("#scontent").append(
+                             "<li class='suser'>"
+                             +"<img src='../icons/user.jpg' class='profile'>"
+                             +"<span class='suser-content'>"
+                             + "no"
+                             +"</span>"
+                             +"</li>"
+                               );
                       
                            loading();
                            scrollTobottom();
@@ -702,7 +630,7 @@ $(document).ready(function(){
                                +"I’m going to release the project."
                                +"</label>"
                                +"</div>"
-                               +"<a class='btn btn-outline-secondary dp-ok s-ok'>Ok</a>"
+                               +"<a class='btn btn-secondary dp-ok s-ok'>Ok</a>"
                                +"</div>" 
                                +"</span>"
                                +"</li>"
@@ -715,8 +643,8 @@ $(document).ready(function(){
 
                 });
                  // with project name ask design phase
-                 // 
-                $("#scontent").on("keyup","#project-name",function(event){
+                 
+                 $("#scontent").on("keyup","#project-name",function(event){
 
                  if(event.keyCode=="13"){
 
@@ -727,6 +655,7 @@ $(document).ready(function(){
 
                  });
 
+                 
                 $("#scontent").on("click","#project-name-ok", function(){
                       
                            project_name=$("#project-name").val();
@@ -776,7 +705,7 @@ $(document).ready(function(){
                                +"I’m going to release the project."
                                +"</label>"
                                +"</div>"
-                               +"<a class='btn btn-outline-secondary dp-ok s-ok'>Ok</a>"
+                               +"<a class='btn btn-secondary dp-ok s-ok'>Ok</a>"
                                +"</div>"   
                                +"</span>"
                                +"</li>"
@@ -810,7 +739,7 @@ $(document).ready(function(){
                                    usay_dp="I’m sketching some prototype ideas.";
                                    break;
                                case "High-Fidelity Prototyping":
-                                   rsay_dp="You want to improve your project, right? Do you want to use the techniques in a short time duration or long time duration?"
+                                   rsay_dp="You want to improve your project right? Do you want to use the techniques in a short time duration or long time duration?"
                                    usay_dp="I’m working on detailed design."
                                    break;
                                case "Release":
@@ -863,7 +792,7 @@ $(document).ready(function(){
                             +"Time does not matter that much"
                             +"</label>"
                             +"</div>"
-                            +"<a class='btn btn-outline-secondary s-ok' id='d-ok'>Ok</a>"
+                            +"<a class='btn btn-secondary s-ok' id='d-ok'>Ok</a>"
                             +"</span>"                    
                             +"</div>"
                             +"</li>"
@@ -938,7 +867,7 @@ $(document).ready(function(){
                                +"No, users will not participate in design process."    
                                +"</label>"
                                +"</div>"
-                               +"<a class='btn btn-outline-secondary s-ok' id='up-ok'>Ok</a>"                   
+                               +"<a class='btn btn-secondary s-ok' id='up-ok'>Ok</a>"                   
                                +"</div>"
                                +"</span>"                    
                                +"</div>"
@@ -1049,7 +978,7 @@ $(document).ready(function(){
                                      +"</div>"
                                      +"</li>"
                                        );
-                                        project_tn=project_tn+"/"+tn.tns[i].tn_name;
+                                       project_tn=project_tn+"/"+tn.tns[i].tn_name;
                                       }
                                        $("#scontent").append(
                                          "<li class='srobot-waiting robot-status'>"
@@ -1100,7 +1029,7 @@ $(document).ready(function(){
                                         );
 
 
-                                         for(i=0; i<4; i++){
+                                         for(i=0; i<4;i++){
                                            $("#scontent").append(
                                             "<li class='srobot'>"
                                            +"<img src='../icons/Timo.jpg' class='profile'>"
@@ -1219,7 +1148,7 @@ $(document).ready(function(){
                                             }
 
 
-                                           $("#scontent").append(
+                                             $("#scontent").append(
                                            "<li class='srobot-waiting robot-status'>"
                                            +"<img src='../icons/Timo.jpg' class='profile'>"
                                            +"<div>"
@@ -1240,17 +1169,20 @@ $(document).ready(function(){
                                            );
                                            scrollTobottom();
 
+
                                            
                                       // success
                                       }
 
                                   });
-                               
 
-                              
 
                               },1000);
                               
+
+
+
+
                              
                         }else{
                                
@@ -1262,7 +1194,7 @@ $(document).ready(function(){
 
                     });
 
-                    $("#scontent").on("click",".history-no",function(){
+                     $("#scontent").on("click",".history-no",function(){
 
                            $(".timo-function").hide();
                            $(".robot-status").removeClass("srobot-waiting");
@@ -1323,7 +1255,7 @@ $(document).ready(function(){
                                   +"<img src='../icons/Timo.jpg' class='profile'>"
                                   +"<div>"
                                   +"<span class='srobot-content'>"
-                                  +"Do you have any suggestions for me?"
+                                  +"Do you have any suggestions for me?</br>"
                                   +"<textarea class='feedback'></textarea></br>" 
                                   +"<button class='btn btn-outline-secondary feedback-ok'>"
                                   +"OK"
@@ -1365,7 +1297,7 @@ $(document).ready(function(){
                                   +"<img src='../icons/Timo.jpg' class='profile'>"
                                   +"<div>"
                                   +"<span class='srobot-content'>"
-                                  +"Do you have any suggestions for me?"
+                                  +"Do you have any suggestions for me?</br>"
                                   +"<textarea class='feedback'></textarea></br>" 
                                   +"<button class='btn btn-outline-secondary feedback-ok'>"
                                   +"OK"
@@ -1418,7 +1350,7 @@ $(document).ready(function(){
                                        success:function(result){
 
                                             console.log(result);
-                        
+                              
                                             tn_dp="";
                                             tn_d="";
                                             tn_up="";
@@ -1460,7 +1392,7 @@ $(document).ready(function(){
                                +"</button></br>"
                                +"<button class='btn btn-outline-secondary st-rc'>"
                                +" Let me recommend."
-                               +"</button>"
+                               +"</button></br>"
                                // +"<button class='btn btn-outline-secondary st-ct'>"
                                // +" Contact me"
                                // +"</button>"
@@ -1484,7 +1416,6 @@ $(document).ready(function(){
 
 
 
-         
 
 
 
@@ -1495,5 +1426,10 @@ $(document).ready(function(){
 
 
 
-         // document ready function
+
+
+
+
+
+
 });
