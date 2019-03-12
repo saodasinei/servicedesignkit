@@ -874,7 +874,7 @@ $(document).ready(function(){
                             switch(tn_d){
                                case "Short-Term Study":
                                    rsay_d="Do you have access to real users? If yes, do you want them to participate in the design activities?";
-                                   usay_d="A few dayss";
+                                   usay_d="A few days";
                                    break;
                                case "Long-Term Study":
                                    rsay_d="Do you have access to real users? If yes, do you want them to participate in the design activities?"
