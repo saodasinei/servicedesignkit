@@ -2,7 +2,7 @@ const express=require('express');
 const mysql=require('mysql');
 
 const db=mysql.createPool({host:'localhost', user:'root',
- database:'servicedesign'});
+ password:'009682',database:'servicedesign'});
 
 module.exports=function(){
 	var router=express.Router();
@@ -19,7 +19,7 @@ module.exports=function(){
 
         db.query('SELECT * FROM tn_info', (err, data)=>{
                 if(err){
-                        res.status(500).send('Something wrong in database!').end();
+                        res.status(500).send('Something wrong in database（tn_info）!').end();
                 }
                 else{
                      tns=data;
@@ -32,7 +32,7 @@ module.exports=function(){
           if(req.session.user){
              db.query(`SELECT * FROM user_like_tn where user_id='${req.session.user}'`, (err,data)=>{
                   if(err){
-                     res.status(500).send('Something wrong in database!').end();
+                     res.status(500).send('Something wrong in database(user_like_tn)!').end();
                   }else{
                      user_like_tn=data;
                      tns=tns;
