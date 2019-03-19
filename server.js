@@ -12,7 +12,7 @@ const expressRoute=require('express-route');
 
 
 const db=mysql.createPool({host:'localhost', user:'root',
- password:'009682', database:'servicedesign'});
+ database:'servicedesign'});
 
 
 var server=express();
