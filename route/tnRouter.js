@@ -19,6 +19,7 @@ module.exports=function(){
 
         db.query('SELECT * FROM tn_info', (err, data)=>{
                 if(err){
+                        log(err);
                         res.status(500).send('Something wrong in database（tn_info）!').end();
                 }
                 else{
