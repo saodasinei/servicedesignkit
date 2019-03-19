@@ -2,7 +2,7 @@ const express=require('express');
 const mysql=require('mysql');
 
 const db=mysql.createPool({host:'localhost', user:'root',
- password:'009682', database:'servicedesign'});
+database:'servicedesign'});
 
 
 module.exports=function(){
