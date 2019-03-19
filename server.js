@@ -12,12 +12,12 @@ const expressRoute=require('express-route');
 
 
 const db=mysql.createPool({host:'localhost', user:'root',
- password:'009682', database:'servicedesign'});
+ password:'', database:'servicedesign'});
 
 
 var server=express();
 
-server.listen(3000);
+server.listen(80);
 
 
 //data request
