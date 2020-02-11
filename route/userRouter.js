@@ -6,7 +6,7 @@ const common=require('../libs/common.js');
 
 
 const db=mysql.createPool({host:'localhost', user:'root',
- password:'009682',database:'servicedesign'});
+ password:'',database:'servicedesign'});
 
 module.exports=function(){
 	var router=express.Router();
@@ -360,6 +360,13 @@ router.get('/removelike', (req,res)=>{
                           res.send("Technique submit successfully!");
                         }
                       });
+
+   });
+
+
+   router.get('/stormboard', (req,res)=>{
+               
+               res.render('stormboard.ejs');
 
    });
 

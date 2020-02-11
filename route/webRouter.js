@@ -17,6 +17,11 @@ module.exports=function(){
     	res.render('imprint.html');
 
     });
+     router.get('/privacy',(req,res)=>{
+
+    	res.render('privacy.html');
+
+    });
 
 
 
