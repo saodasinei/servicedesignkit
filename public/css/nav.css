@@ -67,10 +67,26 @@
 	display:none;
 }
 
+#privacy-alert{
+	position:fixed;
+	bottom:0px;
+	margin:auto;
+	width:100%;
+	text-align:center;
+	display:none;
+}
+
+
+
+
+
 footer{
 	background-color: #333333;
 }
 #imprint{
+	color:#009682
+}
+#privacy{
 	color:#009682
 }
 footer a{

@@ -88,12 +88,29 @@ $(document).ready(function(){
                             +"<img src='../icons/Timo.jpg' class='profile'>"
                             +"<div>"
                             +"<span class='srobot-content'>"
-                            +"Hello, I'm Timo, a digital service design expert. What can I do for you?"         
+                            +"Hello, I'm Timo. Do you have any problems in using the taxonomy? I will be happy to help you?"         
                             +"</span>"                    
                             +"</div>"
                             +"</li>"
                             );
+
+                           setTimeout(function(){ loading();},1000);
+
                       },1000);
+                       
+                      setTimeout(function(){
+                          $(".loading").hide();
+                          $("#scontent").append(
+                            "<li class='srobot'>"
+                            +"<img src='../icons/Timo.jpg' class='profile'>"
+                            +"<div>"
+                            +"<span class='srobot-content'>"
+                            +"The taxonomy includes five dimensions, and you can find some characteristics under each dimension. The dimensions and characteristics are mutually exclusive and collectively exhaustive."        
+                            +"</span>"                    
+                            +"</div>"
+                            +"</li>"
+                            );
+                      },3000);
 
               }else{
                   $("#frame").css("display","none");
@@ -226,7 +243,7 @@ $(document).ready(function(){
                               +"<img src='../icons/Timo.jpg' class='profile'>"
                               +"<div>"
                               +"<span class='srobot-content'>"
-                              +"Hello! My name is Timo. I'm an expert in the field of digital service design. I can help you find some design techniques. Please choose one option below to start."
+                              +"Hello! My name is Timo. I'm an expert in the field of digital service design. I can help you finding some design techniques. Choose one option below to start."
                               +"<div class='timo-function'>"
                               +"<button class='btn btn-outline-secondary st-kw'>"
                               +" Search with keywords."

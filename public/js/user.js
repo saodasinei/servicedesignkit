@@ -1,3 +1,27 @@
+window.onload = function(){
+
+        var s = document.cookie;
+        if (s.indexOf('privacy=1') != -1) 
+          { 
+            $('#privacy-alert').css('display','none')
+            return;
+          }
+          else{
+            $('#privacy-alert').css('display','block')  
+          }
+
+
+         $('#p-agree').click(function(){
+            var d = new Date();
+            d.setHours(d.getHours() + 24);
+            document.cookie = 'privacy=1;expires='+d.toGMTString();
+            $('#privacy-alert').css('display','none')
+         });
+
+}
+  
+
+
 $(document).ready(function(){
 
      // console.log($.cookie('user_login'));
@@ -14,8 +38,7 @@ $(document).ready(function(){
 
 
 
-           
-  
+   
 
   // login and singup form
   $('form').submit(function (event) {
@@ -329,6 +352,122 @@ $(document).ready(function(){
              // });
 
            });
+
+
+          
+
+
+          // stormboard
+
+            // add note
+           
+            $("#addnote").click(function(){
+
+                    $("board").prepend(
+
+
+
+
+
+
+                      );
+
+
+            });
+
+            
+            // delete note
+            $("#board .close").click(function(){
+ 
+                    $(this).parent().parent().parent().remove();                 
+
+            });
+
+                     
+                       
+
+            
+            // modify note
+
+
+
+
+
+
+            // change color
+
+
+
+
+
+
+            // drag
+            $("#board .card").on({
+                    
+                    mousedown: function(e){
+                         var el=$(this);
+                         var os=el.offset(); dx=e.pageX-os.left, dy=e.pageY-os.top;
+
+                         $(document).on('mousemove.drag', function(e){
+                              el.offset({
+                                  top:  e.pageY-dy,
+                                  left: e.pageX-dx
+                              });
+
+                         }).on('mouseup',function(e){
+                           $(document).off('mousemove.drag');
+                         })
+                         $("#drag").css({ top: e.pageY-dy, left:e.pageX-dx });
+                    },
+
+            });
+
+            // modify
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

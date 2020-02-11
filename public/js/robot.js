@@ -55,12 +55,29 @@ $(document).ready(function(){
                             +"<img src='../icons/Timo.jpg' class='profile'>"
                             +"<div>"
                             +"<span class='srobot-content'>"
-                            +"Hello, I'm Timo, a digital service design expert. What can I do for you?"         
+                            +"Hello, I'm Timo. Do you have any questions in using the taxonomy? I will be happy to help you?"         
                             +"</span>"                    
                             +"</div>"
                             +"</li>"
                             );
+
+                           loading();
                       },1000);
+                       
+                      setTimeout(function(){
+                          $(".loading").hide();
+                          $("#scontent").append(
+                            "<li class='srobot'>"
+                            +"<img src='../icons/Timo.jpg' class='profile'>"
+                            +"<div>"
+                            +"<span class='srobot-content'>"
+                            +"The taxonomy includes five dimensions, and there are some characteristics under each dimension. The dimensions and characteristics are mutually exclusive and collectively exhaustive."         
+                            +"</span>"                    
+                            +"</div>"
+                            +"</li>"
+                            );
+                      },2000);
+
 
       // introduce and guidance to technique search
                    $("#user-text").keyup(function(event){

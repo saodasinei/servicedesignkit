@@ -13,7 +13,7 @@ html,body{
 	
 #list-tab a{
 	background-color: #bfbfbf;
-	border:none;
+	/*border:none;*/
 }
 
 /*rightside*/
@@ -121,10 +121,72 @@ html,body{
 .ctattr{
 	color:#009682;
 }
-h3{
+#confirm h3{
 	border-bottom: 1px solid #333333
 }
-h5{
+#confirm h5{
 	border-bottom:1px solid #333333;
 }
 
+
+
+/*stormboard*/
+
+/*card*/
+.card-header{
+      
+      padding:5px 5px 5px 15px;
+}
+.dropdown{
+
+	 position: relative;
+     display: inline-block;
+}
+.dropbtn{
+	 height:20px;
+	 width:20px;
+	 border: none;
+     cursor: pointer;
+     background: linear-gradient(to bottom right, red , blue);
+	 -moz-border-radius:50%;
+     -webkit-border-radius:50%;
+
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#notecolor{
+
+      margin-left:220px; 
+      margin-top:8px;      
+}
+
+.close{
+      margin:auto;
+      margin-right:20px;
+}
+
+/*toolbar*/
+#toolbar{
+    margin:auto;
+	width: 600px;
+	height:70px;
+	background-color:#dbdbdb;
+    
+}
+
+#toolbar button{
+	margin-top:15px;
+	margin-left: 15px;
+	background-color:#009682;
+	-moz-border-radius:50%;
+    -webkit-border-radius:50%;
+}
