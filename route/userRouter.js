@@ -6,7 +6,7 @@ const common=require('../libs/common.js');
 
 
 const db=mysql.createPool({host:'localhost', user:'root',
- password:'',database:'servicedesign'});
+ password:'009682',database:'servicedesign'});
 
 module.exports=function(){
 	var router=express.Router();
